@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects – Sujay Iyer</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      background: #fff;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 1rem;
+    }
+    .project-title {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .tags {
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .tag {
+      display: inline-block;
+      background: #eee;
+      padding: 2px 8px;
+      margin: 2px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">🏠 Home</a> |
+    <a href="/blog/">📝 Blog</a> |
+    <a href="/projects/">🚗 Projects</a> |
+    <a href="/about.html">👤 About</a>
+  </nav>
+
+  <h1>🚀 Featured Projects</h1>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="./images/ev-thermal.jpg" alt="EV Thermal System">
+      <div class="project-content">
+        <h2 class="project-title">EV Thermal Management</h2>
+        <p>CFD modeling and simulation of battery cooling for electric vehicles.</p>
+        <div class="tags">
+          <span class="tag">ANSYS</span>
+          <span class="tag">Simulation</span>
+          <span class="tag">EV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="./images/predictive-ml.jpg" alt="Predictive Maintenance ML">
+      <div class="project-content">
+        <h2 class="project-title">Predictive Maintenance AI</h2>
+        <p>Built a machine learning model to forecast failures using telemetry data.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">AI</span>
+          <span class="tag">Reliability</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="./images/fmea-tool.jpg" alt="FMEA Tool">
+      <div class="project-content">
+        <h2 class="project-title">Automated FMEA Tool</h2>
+        <p>Python script to auto-generate FMEA from system diagrams and input files.</p>
+        <div class="tags">
+          <span class="tag">FMEA</span>
+          <span class="tag">Python</span>
+          <span class="tag">Automation</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
