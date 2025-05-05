@@ -4,6 +4,46 @@
   <meta charset="UTF-8">
   <title>Sujay Iyer</title>
   <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    nav {
+      margin-bottom: 2em;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    .button-bar {
+      margin-top: 1em;
+    }
+    .button-bar a {
+      background: #00adb5;
+      color: #121212;
+      padding: 8px 14px;
+      border-radius: 4px;
+      margin: 0 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,47 +53,54 @@
     <a href="/projects/">Projects</a>
   </nav>
 
-  <header>
-    <h1>Sujay Iyer</h1>
-    <p>Hey ✌️ I'm Sujay, an automotive engineer with 4 years of experience and a passion for advancing vehicle performance. My engineering journey brought me to Germany in 2019.</p>
-    <p>I'm currently diving deep into implementing ADAS concepts and applying AI to enhance functional safety. When I’m not engineering, you’ll find me hiking in Bayern, swimming, or biking along fluent roads!</p>
-  </header>
+  <h1>Sujay Iyer</h1>
 
-  <section>
-    <h2>Experience Highlights</h2>
-    <ul>
-      <li><strong>Fraunhofer</strong> – Developed thermo-mechanical simulation framework for automotive optical modules, enhancing sensor design.</li>
-      <li><strong>Modelwise</strong> – Contributed to TÜV validation of functional safety tools for ISO 26262 compliance.</li>
-      <li><strong>Volvo Group Trucks</strong> – Optimized component segmentation across 70+ global plants, improving manufacturing efficiency.</li>
-    </ul>
-  </section>
+  <p>Hey ✌️ I'm Sujay, an automotive engineer with 4 years of experience and a passion for advancing vehicle performance. My engineering journey brought me to Germany in 2019.</p>
+  <p>I'm exploring ADAS systems, and learning how AI can improve functional safety. Outside work, you’ll find me hiking in Bayern, swimming, or biking scenic roads.</p>
 
-  <section>
-    <h2>Expertise</h2>
-    <ul>
-      <li><strong>ADAS & Automation</strong>: ADAS (Advanced Driver Assistance Systems), AI in Automotive</li>
-      <li><strong>Safety Engineering</strong>: Functional Safety (ISO 26262), FMEA</li>
-      <li><strong>Product Development</strong>: New Product Development, CAD Modeling</li>
-    </ul>
-  </section>
+  <h3>Experience Highlights</h3>
+  <ul>
+    <li><strong>Fraunhofer</strong>: Developed thermo-mechanical simulation framework for automotive optical modules.</li>
+    <li><strong>Modelwise</strong>: Contributed to TÜV validation for ISO 26262 safety compliance tools.</li>
+    <li><strong>Volvo Group Trucks</strong>: Optimized component segmentation across 70+ global plants.</li>
+  </ul>
 
-  <section>
-    <h2>Tools & Technologies</h2>
-    <ul>
-      <li><strong>Simulation & CAD</strong>: ANSYS, SolidWorks</li>
-      <li><strong>Programming & Analysis</strong>: MATLAB/Simulink, Python</li>
-      <li><strong>Documentation & Communication</strong>: MS Office</li>
-    </ul>
-  </section>
+  <h3>Expertise</h3>
+  <ul>
+    <!-- Expertise Word Cloud -->
+<div style="margin-top: 1.5em;">
+  <h4>Expertise Word Cloud</h4>
+  <svg width="100%" height="120" viewBox="0 0 600 120">
+    <text x="10" y="40" font-size="20" fill="#00adb5">ADAS</text>
+    <text x="120" y="30" font-size="14" fill="#f0f0f0">AI in Automotive</text>
+    <text x="260" y="45" font-size="18" fill="#ffcc00">Functional Safety</text>
+    <text x="410" y="25" font-size="12" fill="#e3e3e3">FMEA</text>
+    <text x="500" y="50" font-size="16" fill="#d1d1d1">New Product Development</text>
+    <text x="80" y="90" font-size="14" fill="#cccccc">CAD Modeling</text>
+  </svg>
+</div>
+  </ul>
 
-  <section>
-    <h2>Connect</h2>
-    <p>
-      <a href="resume.pdf" class="resume-button">📄 Resume</a> |
-      <a href="https://www.linkedin.com/in/sujay-jairaman-iyer/" target="_blank">🔗 LinkedIn</a> |
-      <a href="mailto:sujayhyd@gmail.com">✉️ Email</a>
-    </p>
-  </section>
+  <h3>Tools</h3>
+  <ul>
+    <!-- Tools Word Cloud -->
+<div style="margin-top: 2em;">
+  <h4>Tools Word Cloud</h4>
+  <svg width="100%" height="120" viewBox="0 0 600 120">
+    <text x="20" y="40" font-size="20" fill="#00adb5">ANSYS</text>
+    <text x="150" y="35" font-size="16" fill="#cccccc">SolidWorks</text>
+    <text x="280" y="50" font-size="18" fill="#f0f0f0">Python</text>
+    <text x="390" y="30" font-size="14" fill="#d1d1d1">MATLAB/Simulink</text>
+    <text x="120" y="90" font-size="12" fill="#bbbbbb">MS Office</text>
+  </svg>
+</div>
+  </ul>
+
+  <div class="button-bar">
+    <a href="resume.pdf">📄 Resume</a>
+    <a href="https://www.linkedin.com/in/sujay-jairaman-iyer/" target="_blank">LinkedIn</a>
+    <a href="mailto:sujayhyd@gmail.com">Email</a>
+  </div>
 
 </body>
 </html>
