@@ -1,19 +1,130 @@
+/* Global Settings */
 body {
-  font-family: sans-serif;
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
   line-height: 1.6;
+  font-size: 16px;
 }
+
+/* Layout */
 nav {
-  text-align: right;
-  margin-bottom: 1rem;
+  background-color: #1f1f1f;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-a {
-  color: #0366d6;
+
+nav a {
+  color: #f0f0f0;
+  margin: 0 12px;
   text-decoration: none;
-  margin-left: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-a:hover {
-  text-decoration: underline;
+
+nav a:hover {
+  color: #00adb5;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p, ul {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+/* Buttons & Links */
+a.resume-button {
+  display: inline-block;
+  background-color: #00adb5;
+  color: #121212;
+  padding: 10px 20px;
+  margin: 1em auto;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+a.resume-button:hover {
+  background-color: #02c4cd;
+}
+
+/* Social Icons */
+.socials {
+  text-align: center;
+  margin: 2em auto;
+}
+
+.socials img {
+  width: 32px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Cards (for blogs/projects if needed) */
+.card {
+  background-color: #1e1e1e;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 173, 181, 0.1);
+  max-width: 800px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 173, 181, 0.3);
+}
+
+/* Decorative Horizontal Rule */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #00adb5, transparent);
+  margin: 2em auto;
+  width: 80%;
+}
+
+/* Fluid Container */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .card, p, ul {
+    padding: 0 1em;
+  }
 }
