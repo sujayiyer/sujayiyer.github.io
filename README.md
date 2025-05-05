@@ -1,3 +1,9 @@
+<p align="right">
+  <a href="./blog.md"> Blog</a> |
+  <a href="./projects.md"> Projects</a>
+</p>
+
+
 Sujay Iyer\
 **Automotive Engineer | Munich, Germany**  
 
