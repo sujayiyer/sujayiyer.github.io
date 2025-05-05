@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EV Thermal Management – Sujay Iyer</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .project-header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .tag {
+      display: inline-block;
+      background: #eee;
+      padding: 4px 10px;
+      margin-right: 6px;
+      border-radius: 4px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">🏠 Home</a> |
+    <a href="/blog/">📝 Blog</a> |
+    <a href="/projects/">🚗 Projects</a> |
+    <a href="/about.html">👤 About</a>
+  </nav>
+
+  <article>
+    <div class="project-header">
+      <h1>EV Thermal Management</h1>
+      <p><strong>Date:</strong> April 2025</p>
+      <img src="./images/ev-thermal.jpg" alt="EV Thermal Simulation">
+    </div>
+
+    <div class="tags">
+      <span class="tag">ANSYS</span>
+      <span class="tag">Simulation</span>
+      <span class="tag">EV</span>
+      <span class="tag">Thermal Systems</span>
+    </div>
+
+    <p>
+      This project focused on optimizing the thermal performance of electric vehicle battery packs using
+      CFD simulations. I created a parametric model in ANSYS Fluent to evaluate various cooling designs and
+      airflow strategies under dynamic load conditions.
+    </p>
+
+    <h2>🔧 Objectives</h2>
+    <ul>
+      <li>Reduce hotspot temperature above 45°C</li>
+      <li>Evaluate air- vs liquid-cooled architectures</li>
+      <li>Simulate thermal performance under WLTP driving cycle</li>
+    </ul>
+
+    <h2>📊 Approach</h2>
+    <p>
+      The CAD model was imported into ANSYS Workbench and meshed using a hybrid tetrahedral method.
+      Heat generation was simulated using battery discharge profiles, and boundary conditions were
+      based on ambient operating scenarios from -10°C to +40°C.
+    </p>
+
+    <h2>✅ Results</h2>
+    <ul>
+      <li>Achieved 12% improvement in cooling uniformity</li>
+      <li>Reduced thermal gradient across cells by 7°C</li>
+      <li>Liquid-cooled loop met target thresholds under all cycles</li>
+    </ul>
+
+    <h2>🧠 Tools Used</h2>
+    <p>ANSYS Fluent, Workbench, Python for pre-processing, Excel for result aggregation.</p>
+
+    <p><a href="/projects/">← Back to Projects</a></p>
+  </article>
+</body>
+</html>
